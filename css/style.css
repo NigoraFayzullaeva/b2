@@ -274,7 +274,7 @@
 /* footer */
 #footer {
     background-color: #000;
-    height: 250px;
+    min-height: 250px;
 padding-bottom: 50px;
 }
 
@@ -322,4 +322,89 @@ padding-bottom: 50px;
     color: #fff;
     text-align: center;
     font-style: italic;
+}
+/* media */
+@media (max-width: 769px){
+    .menu-img {
+        width: 80px;
+        height: 80px;
+    }
+    .menu-lists{
+        margin-left: 30px;
+        font-size: 18px;
+    }
+    .header-description {
+        font-size: 23px;
+    }
+    .header-main-title {
+        font-size: 70px;
+}
+#slider{
+    width: 80%;
+}
+.des-subtitle {
+    font-size: 45px;
+}
+}
+@media (max-width: 420px){
+    .menu{
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 23px;
+        margin-right: -26px;
+    }
+    .header-title {
+    margin-top: 23px;
+    }
+    .header-description {
+        font-size: 21px;
+    }
+    .header-main-title {
+        font-size: 47px;
+    }
+    .header-button {
+        padding: 10px 25px;
+        margin-top: 27px;
+    }
+    .header-button-services {
+        font-size: 13px;
+    }
+    #slider {
+        width: 90%;
+    }
+    .introduction{
+        font-size: 16px;
+    }
+    .customer-name {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    .customer-review {
+        font-size: 13px;
+        line-height: 21px;
+        margin-bottom: 20px;
+    }
+    .des-subtitle {
+        font-size: 30px;
+    }
+    .description {
+        font-size: 14px;
+        letter-spacing: 2px;
+        line-height: 21px;
+        margin-bottom: 26px;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .address-title {
+        font-size: 21px;
+        margin-top: 21px;
+        margin-bottom: 10px;
+    }
+    .address-subtitle{
+        line-height: 27px;
+    }
 }
