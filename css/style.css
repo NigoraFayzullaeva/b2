@@ -141,64 +141,20 @@
 .card-title {
     margin-top: 20px;
 }
-
-/* slider */
-.cards {
-    display: flex;
-    justify-content: space-around;
-}
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    width: 40%;
-}
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-.customer-name {
-    font-family: "Bitter", Sans-serif;
-    font-weight: 300;
-    margin-bottom: 15px;
-    font-size: 20px;
-}
-
-.customer-review {
-    font-family: "Roboto", Sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 24px;
-    margin-bottom: 25px;
-}
-.customer-read-more {
-    text-decoration: none;
-    font-size: 17px;
-}
-.cus-name{
-    margin-top: 15px;
-    margin-left: 15px;
-}
-.cus-rev{
-    margin-left: 15px;
-    margin-right: 15px;
-}
-.cus-read{
-    text-align: end;
-}
-/* slider */
-
-/* Slider */
+/* SLIDER */
 .cards {
     display: flex;
     justify-content: space-evenly;
 }
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
     transition: 0.3s;
-    width: 40%;
+    width: 100%;
+    min-height: 400px;
 }
-.card:hover {
+/* .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
+} */
 .customer-name {
     font-family: "Bitter", Sans-serif;
     font-weight: 300;
@@ -322,6 +278,25 @@ padding-bottom: 50px;
     color: #fff;
     text-align: center;
     font-style: italic;
+}
+/* ABOUT-US */
+.about-us-header{
+    background-image: url(../img/about-us.jpg);
+}
+.about-us-title{
+    font-size: 80px;
+}
+/* SERVICES */
+.services-header{
+    background-image: url(../img/services.jpg);
+}
+/* CONTACT-US */
+.contact-us-header{
+    background-image: url(../img/contact-us.jpg);
+}
+.swiper-container {
+    width: 60%;
+    min-height: 400px;
 }
 /* media */
 @media (max-width: 769px){
