@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>About Us</title>
-        <link rel="stylesheet" href="../css/aos.css">
-        <link rel="stylesheet" href="../css/all.min.css">
-        <link rel="stylesheet" href="../css/hamburgers.css">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Merriweather:wght@300;400&family=Oswald:wght@300;400;500;600&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="../css/style.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us</title>
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/hamburgers.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Merriweather:wght@300;400&family=Oswald:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
 <body>
     <header class="header about-us-header">
         <div class="container">
@@ -36,17 +39,108 @@
                 </nav>
             </div>
             <div class="header-title" data-aos-delay="300" data-aos-duration="1200" data-aos="fade-up"
-                data-aos-anchor-placement="bottom-bottom">   
-                <h2 class="header-main-title about-us-title">About us</h2>          
+                data-aos-anchor-placement="bottom-bottom">
+                <h2 class="header-main-title about-us-title">About us</h2>
             </div>
         </div>
     </header>
 
+    <main class="main">
 
+        <div class="about-us-video">
+            <div class="swiper-container about-video">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <video id="slider-about" autoplay muted loop>
+                            <source src="../video/video-int.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video id="slider-about" autoplay muted loop>
+                            <source src="../video/video-int2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video id="slider-about" autoplay muted loop>
+                            <source src="../video/video-int3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video id="slider-about" autoplay muted loop>
+                            <source src="../video/home-intro.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="our-history">
+            <img src="../img/history.jpg" alt="history-img" class="img-history">
+            <div class="description-history">
+                <div class="des-little">
+                    <p class="since">Since 1989</p>
+                    <h2 class="subtitle-history">
+                        Our History
+                    </h2>
+                    <p class="history-des">Tashkent Barbershop is a classic upscale barbershop. We offer a variety of
+                        services, catering to everyone. Hounds is a gentleman’s shop, reminiscent of the classic
+                        barbershop. We are striving to bring the memories back, with solely the clientele in mind.
+                        People pay for quality – Hounds is where you will get it. <br>
+                        We are barbers who love our craft, providing top notch service that helps men Stay Sharp.</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <footer id="footer">
+        <div class="contact container">
+            <div class="address">
+                <h2 class="address-title">ADDRESS</h2>
+                <p class="address-subtitle">1809 Avenue M <br> Brooklyn, NY <br>
+                    11230</p>
+            </div>
+            <div class="hours">
+                <h2 class="address-title">HOURS</h2>
+                <p class="address-subtitle">10am - 10pm</p>
+                <p class="address-subtitle">7 days a week</p>
+            </div>
+            <div class="phone">
+                <h2 class="address-title">PHONE</h2>
+                <p class="address-subtitle">(917) 770-5939</p>
+                <div class="icons">
+                    <a href="https://www.facebook.com/tashkent.barbershop"><i class="icon fab fa-facebook"></i></a>
+                    <a
+                        href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0zEgpSSo2SjcwYLRSNaiwsEw2MjE1NTMzSLM0MzJPsTKoSDUwT0w0NTRNSzMySTJNTvYSLkkszshOzStRSEosSkotKs7ILwAAHqoW2A&q=tashkent+barbershop&oq=&aqs=chrome.0.46j35i39l5j46j69i59.17611519j0j15&sourceid=chrome&ie=UTF-8"><i
+                            class="icon fab fa-google"></i></a>
+                    <a href="https://www.yelp.com/biz/tashkent-barbershop-brooklyn"><i class="icon fab fa-yelp"></i></a>
+                    <a href="https://www.instagram.com/tashkent_barbershop/?hl=en"><i
+                            class="icon fab fa-instagram"></i></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="copy-text">All Rights Reserved &copy; 2020</p>
+        </div>
+    </footer>
 
 
     <script src="../js/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="../js/main.js"></script>
 </body>
+
 </html>

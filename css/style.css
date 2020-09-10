@@ -141,20 +141,24 @@
 .card-title {
     margin-top: 20px;
 }
+
 /* SLIDER */
+.swiper-container {
+    width: 60%;
+    min-height: 400px;
+}
+
 .cards {
     display: flex;
     justify-content: space-evenly;
 }
+
 .card {
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
     transition: 0.3s;
     width: 100%;
     min-height: 400px;
 }
-/* .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-} */
+
 .customer-name {
     font-family: "Bitter", Sans-serif;
     font-weight: 300;
@@ -169,32 +173,39 @@
     line-height: 24px;
     margin-bottom: 25px;
 }
+
 .customer-read-more {
     text-decoration: none;
     font-size: 17px;
 }
-.container{
+
+.container {
     position: relative;
 }
-.cus-name{
+
+.cus-name {
     margin-top: 15px;
     margin-left: 15px;
 }
-.cus-rev{
+
+.cus-rev {
     margin-left: 15px;
     margin-right: 15px;
 }
-.cus-read{
+
+.cus-read {
     position: relative;
     bottom: 0;
     right: 0;
     margin-bottom: 15px;
     align-items: center;
 }
+
 .description-main {
     text-align: center;
     margin-bottom: 70px;
 }
+
 .des-subtitle {
     color: #000000;
     font-family: "Oswald", Sans-serif;
@@ -227,18 +238,20 @@
 .learn-more:hover {
     text-decoration: underline;
 }
+
 /* footer */
 #footer {
     background-color: #000;
     min-height: 250px;
-padding-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 .contact {
     display: flex;
     justify-content: space-around;
 }
-.left-space{
+
+.left-space {
     margin-right: 20px;
 }
 
@@ -268,69 +281,155 @@ padding-bottom: 50px;
     margin-top: 15px;
     cursor: pointer;
 }
-.copyright{
+
+.copyright {
     position: relative;
     bottom: 0;
     margin-top: 35px;
     margin-bottom: 15px;
 }
-.copy-text{
+
+.copy-text {
     color: #fff;
     text-align: center;
     font-style: italic;
 }
+
 /* ABOUT-US */
-.about-us-header{
+.about-us-header {
     background-image: url(../img/about-us.jpg);
+    margin-bottom: 40px;
 }
-.about-us-title{
+
+.about-us-title {
     font-size: 80px;
 }
+
+/* video slider */
+.about-video {
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+/* our history */
+.our-history {
+    display: flex;
+}
+
+.img-history {
+    min-width: 552px;
+    height: 463px;
+}
+
+.description-history {
+    display: inline;
+    background-color: #000;
+    padding: 20px;
+    min-width: 440px;
+}
+
+.des-little {
+    padding: 15px;
+    word-break: break-all;
+    /* margin-left: 40px; */
+    /* margin-right: 40px; */
+}
+
+.since {
+    color: #b08b66;
+    font-family: "Merriweather", Sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    position: relative;
+
+}
+
+.since::after {
+    display: block;
+    content: '';
+    width: 110px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    top: 30px;
+}
+
+.subtitle-history {
+    color: #ffffff;
+    font-family: "Oswald", Sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.history-des {
+    color: #ffffff;
+    font-family: "Merriweather", Sans-serif;
+    font-size: 14px;
+    /* width: 100%; */
+    font-weight: 300;
+    line-height: 28px;
+}
+
 /* SERVICES */
-.services-header{
+.services-header {
     background-image: url(../img/services.jpg);
 }
+
 /* CONTACT-US */
-.contact-us-header{
+.contact-us-header {
     background-image: url(../img/contact-us.jpg);
 }
-.swiper-container {
-    width: 60%;
-    min-height: 400px;
-}
+
 /* media */
-@media (max-width: 769px){
+@media (max-width: 813px) {
+    .header-main-title {
+        line-height: 113px;
+    }
+}
+
+@media (max-width: 769px) {
     .menu-img {
         width: 80px;
         height: 80px;
     }
-    .menu-lists{
+
+    .menu-lists {
         margin-left: 30px;
         font-size: 18px;
     }
+
     .header-description {
         font-size: 23px;
     }
+
     .header-main-title {
         font-size: 70px;
+    }
+
+    #slider {
+        width: 80%;
+    }
+
+    .des-subtitle {
+        font-size: 45px;
+    }
 }
-#slider{
-    width: 80%;
-}
-.des-subtitle {
-    font-size: 45px;
-}
-}
-@media (max-width: 532px){
-    .menu{
+
+@media (max-width: 532px) {
+    .menu {
         display: none;
     }
+
     .hamburger {
         display: block;
         position: absolute;
         top: 23px;
         margin-right: -26px;
     }
+
     ul li:not(:last-child) {
         margin-bottom: 20px;
     }
@@ -359,58 +458,100 @@ padding-bottom: 50px;
         color: #fff;
         transition: all 0.5s;
     }
-    .menu-lists:hover{
+
+    .menu-lists:hover {
         color: #b08b66;
     }
+
     .header-title {
-    margin-top: 23px;
+        margin-top: 23px;
     }
+
     .header-description {
         font-size: 21px;
     }
+
     .header-main-title {
         font-size: 47px;
+        line-height: 68px;
     }
+
     .header-button {
         padding: 10px 25px;
         margin-top: 27px;
     }
+
     .header-button-services {
         font-size: 13px;
     }
+
     #slider {
         width: 90%;
     }
-    .introduction{
+
+    .introduction {
         font-size: 16px;
     }
+
     .customer-name {
         margin-bottom: 10px;
         font-size: 18px;
     }
+
     .customer-review {
         font-size: 13px;
         line-height: 21px;
         margin-bottom: 20px;
     }
+
     .des-subtitle {
         font-size: 30px;
     }
+
     .description {
         font-size: 14px;
         letter-spacing: 2px;
         line-height: 21px;
         margin-bottom: 26px;
     }
-    .contact{
+
+    .contact {
         flex-direction: column;
     }
+
     .address-title {
         font-size: 21px;
         margin-top: 21px;
         margin-bottom: 10px;
     }
-    .address-subtitle{
+
+    .address-subtitle {
         line-height: 27px;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+        left: 0px;
+        bottom: 215px;
+        width: 100%;
+    }
+    #slider-about {
+        width: 100%;
+    }
+    .img-history{
+        display: none;
+    }
+    .description-history{
+        min-width: 355px;
+    }
+    .since{
+        margin-top: 0;
+        font-size: 14px;
+    }
+    .subtitle-history{
+        font-size: 25px;
+    }
+    .history-des {
+        font-size: 13px;
+        line-height: 25px;
     }
 }
