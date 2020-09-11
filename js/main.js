@@ -14,7 +14,7 @@ $hamburger.on("click", function (e) {
     // Do something else, like open/close menu
 });
 
-var mySwiper = new Swiper('.swiper-container' , {
+var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -35,3 +35,9 @@ var mySwiper = new Swiper('.swiper-container' , {
         el: '.swiper-scrollbar',
     },
 })
+
+var mySwiper = new Swiper('.swiper-container', {
+    autoplay: {
+        delay: 5000,
+    },
+});
