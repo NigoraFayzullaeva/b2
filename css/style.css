@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+body {
+    background-color: #f6f4e6;
+}
+
 .header {
     background-image: url(../img/home-top-bg.jpg);
     background-repeat: no-repeat;
@@ -35,7 +39,7 @@
     font-weight: 500;
     margin-left: 50px;
     text-decoration: none;
-    color: #ffffff;
+    color: #e7dec8;
     font-size: 20px;
 }
 
@@ -145,25 +149,27 @@
 /* SLIDER */
 .swiper-container {
     width: 60%;
-    min-height: 400px;
+    min-height: 200px;
 }
 
 .cards {
+    margin-top: 30px;
     display: flex;
     justify-content: space-evenly;
+    max-height: max-content;
 }
 
 .card {
     transition: 0.3s;
     width: 100%;
-    min-height: 400px;
+    min-height: 200px;
 }
 
 .customer-name {
     font-family: "Bitter", Sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     margin-bottom: 15px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .customer-review {
@@ -177,6 +183,8 @@
 .customer-read-more {
     text-decoration: none;
     font-size: 17px;
+    float: right;
+    margin-right: 25px;
 }
 
 .container {
@@ -184,6 +192,7 @@
 }
 
 .cus-name {
+    font-weight: bold;
     margin-top: 15px;
     margin-left: 15px;
 }
@@ -197,8 +206,6 @@
     position: relative;
     bottom: 0;
     right: 0;
-    margin-bottom: 15px;
-    align-items: center;
 }
 
 .description-main {
@@ -211,7 +218,7 @@
     font-family: "Oswald", Sans-serif;
     font-size: 52px;
     margin-bottom: 20px;
-    margin-top: 30px;
+    margin-top: 22px;
 }
 
 .description {
@@ -314,6 +321,7 @@
 /* our history */
 .our-history {
     display: flex;
+    margin-bottom: 10px;
 }
 
 .img-history {
@@ -378,12 +386,252 @@
     background-image: url(../img/services.jpg);
 }
 
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    background-color: #b08b66;
+    border-bottom: solid 1px #fff;
+    /* min-width: 990px; */
+}
+
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    max-width: 492px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 32px;
+    font-family: "Oswald", Sans-serif;
+    font-weight: 700;
+}
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #000;
+    color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    border-top: none;
+}
+
+.services-list {
+    background: rgb(31, 30, 30);
+    color: #fff;
+    font-family: Open Sans, sans-serif;
+    padding-top: 40px;
+    padding-left: 10%;
+    width: 100%;
+}
+
+table.pricelist__table {
+    width: 100%;
+    max-width: 90%;
+    align-items: center;
+    border-spacing: 0;
+    margin: 0;
+    table-layout: auto;
+}
+
+table.pricelist__table tr td {
+    font-size: 18px;
+    border-bottom: 1px solid #999;
+    padding: 15px;
+}
+
+table.pricelist__table tr td:nth-child(2) {
+    border-left: 1px solid #999;
+    width: 80px;
+}
+
+table.pricelist__table tr:last-child td {
+    border-bottom: none;
+}
+.services-bonuses{
+    background-color: #e7dec8;
+    padding: 30px;
+}
+.promotions{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Merriweather", Sans-serif;
+}
+.deals{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Merriweather", Sans-serif;
+}
+.give-call{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    
+}
+.call-title{
+    font-size: 70px;
+    font-family: "Merriweather", Sans-serif;
+    margin-bottom: 15px;
+    
+}
+.call-animation{
+    animation: pulse 0.5s ease-in-out 0.5s infinite;
+}
+.call-num{
+    color: #000;
+    font-size: 60px;
+    
+}
 /* CONTACT-US */
 .contact-us-header {
     background-image: url(../img/contact-us.jpg);
 }
 
+.contacts-form {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.phone-address {
+    margin-bottom: 35px;
+}
+
+.phone-title {
+    margin-bottom: 15px;
+}
+
+.phone-number {
+    color: #000000;
+    font-family: "Merriweather", Sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 5.2px;
+    transition: all 0.5s;
+}
+.tel-hover{
+    transition: all 0.5s;
+}
+.tel-hover:hover{
+    font-size: 28px;
+}
+
+.contact-title {
+    margin-top: 30px;
+}
+
+.input-contact {
+    margin: 0px 0px 0px 0px;
+    padding: 1px 50px 1px 50px;
+    background-color: #f9f9f7;
+    margin-top: 40px;
+    flex-direction: column;
+    display: flex;
+}
+
+.input-1 {
+    padding: 10px 0px 10px 10px;
+    font-family: "Merriweather", Sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: lowercase;
+    letter-spacing: 1.4px;
+    color: #555555;
+    background-color: #f9f9f7;
+    opacity: 1;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #000;
+    margin-bottom: 20px;
+}
+
+.submit-button {
+    font-family: "Merriweather", Sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #000000;
+    border-radius: 0px 0px 0px 0px;
+    background-color: rgba(255, 255, 255, 0);
+    color: #000000;
+    line-height: 2;
+    min-height: 2rem;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+/* iframe {
+    min-width: 990px;
+    height: 420px;
+} */
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.graphic {
+    background-image: url(../img/contactus-bottom.jpg);
+    background-position: center top 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.graphic-title {
+    color: #b59478;
+    font-family: "Oswald", Sans-serif;
+    font-size: 52px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+.window {
+    font-size: 30px;
+    color: #fff;
+}
+
+.time-day {
+    margin-top: 50px;
+    padding-bottom: 25px;
+}
+
+.time {
+    color: #ffffff;
+    font-family: "Merriweather", Sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 2.1em;
+    letter-spacing: 1.9px;
+}
+
 /* media */
+
 @media (max-width: 813px) {
     .header-main-title {
         line-height: 113px;
@@ -415,6 +663,18 @@
 
     .des-subtitle {
         font-size: 45px;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    .our-history {
+        flex-direction: column;
+    }
+    .promotions,
+    .deals{
+        font-size: 28px;
     }
 }
 
@@ -529,29 +789,101 @@
         line-height: 27px;
     }
 
-    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    .swiper-container-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
         left: 0px;
-        bottom: 215px;
+        bottom: 0px;
         width: 100%;
     }
+
     #slider-about {
         width: 100%;
     }
-    .img-history{
+
+    .about-video {
+        min-height: 0px;
+    }
+
+    .img-history {
         display: none;
     }
-    .description-history{
+
+    .description-history {
         min-width: 355px;
     }
-    .since{
+
+    .since {
         margin-top: 0;
         font-size: 14px;
     }
-    .subtitle-history{
+
+    .subtitle-history {
         font-size: 25px;
     }
+
     .history-des {
         font-size: 13px;
         line-height: 25px;
+    }
+
+    .phone-address {
+        margin-bottom: 25px;
+    }
+
+    .phone-title {
+        font-size: 15px;
+    }
+
+    .phone-number {
+        font-size: 14px;
+    }
+
+    .input-contact {
+        margin-top: 23px;
+    }
+
+    .input-1 {
+        margin-bottom: 10px;
+        padding: 7px 0px 7px 7px;
+        font-size: 13px;
+    }
+
+    .submit-button {
+        letter-spacing: 1.5px;
+        padding: 8px 14px;
+        font-size: 11px;
+    }
+
+    .graphic-title {
+        font-size: 23px;
+        padding-top: 25px;
+        padding-bottom: 0px;
+    }
+
+    .time-day {
+        margin-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .time {
+        font-size: 16px;
+    }
+    .services-list{
+        padding-top: 16px;
+    padding-bottom: 16px;
+    }
+    table.pricelist__table tr td {
+        font-size: 13px;
+        padding: 12px;
+    }
+    .promotions, .deals {
+        font-size: 16px;
+    }
+    .call-title{
+        font-size: 55px;
+    }
+    .call-num{
+        font-size: 45px;
     }
 }

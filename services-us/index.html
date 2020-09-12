@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Our Services</title>
-        <link rel="stylesheet" href="../css/aos.css">
-        <link rel="stylesheet" href="../css/all.min.css">
-        <link rel="stylesheet" href="../css/hamburgers.css">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Merriweather:wght@300;400&family=Oswald:wght@300;400;500;600&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="../css/style.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Our Services</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Merriweather:wght@300;400&family=Oswald:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/aos.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/hamburgers.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
 <body>
     <header class="header services-header">
         <div class="container">
@@ -36,17 +41,182 @@
                 </nav>
             </div>
             <div class="header-title" data-aos-delay="300" data-aos-duration="1200" data-aos="fade-up"
-                data-aos-anchor-placement="bottom-bottom">   
-                <h2 class="header-main-title about-us-title">Services</h2>          
+                data-aos-anchor-placement="bottom-bottom">
+                <h2 class="header-main-title about-us-title">Services</h2>
             </div>
         </div>
     </header>
+    <main class="services-tabs container">
+        <div class="services-bonuses">
+            <div class="promotions">
+                <h2 class="bonuses">Bonuses</h2>
+                <h2 class="promotion">Promotions</h2>
+            </div>
+            <div class="deals">
+                <h2 class="bonuses">Weekly Promotions</h2>
+                <h2 class="promotion">Deals</h2>
+            </div>
+        </div>
+        <div class="tab">
+            <button class="tablinks" onclick="openService(event, 'Haircut')">HAIRCUT SERVICES</button>
+            <button class="tablinks" onclick="openService(event, 'Wedding')">WEDDING SERVICES</button>
+        </div>
+
+        <div id="Haircut" class="tabcontent">
+            <div class="services-list">
+                <table class="pricelist__table">
+                    <tbody>
+                        <tr>
+                            <td>Haircuts</td>
+                            <td>$21.00 </td>
+                        </tr>
+                        <tr>
+                            <td>Skin Fade</td>
+                            <td>$23.00 </td>
+                        </tr>
+                        <tr>
+                            <td>Children's Cut</td>
+                            <td>$16.00 </td>
+                        </tr>
+                        <tr>
+                            <td>Shape Up</td>
+                            <td>$13.00 </td>
+                        </tr>
+                        <tr>
+                            <td>Senior Citizen</td>
+                            <td>$16.00 </td>
+                        </tr>
+                        <tr>
+                            <td>Hot Towel Shave</td>
+                            <td>$25.00 </td>
+                        </tr>
+                        <tr>
+                            <td>Beard Trim</td>
+                            <td>$16.00 </td>
+                        </tr>
+
+                        <tr>
+                            <td>Hair Wash</td>
+                            <td>$5.00 </td>
+                        </tr>
+                        <tr>
+                            <td>Hair Color</td>
+                            <td>$25.00 </td>
+                        </tr>
+                        <tr>
+                            <td>Beard Color</td>
+                            <td>$15.00 </td>
+                        </tr>
+                        <tr>
+                            <td>Full Washed & Disinfect Cape</td>
+                            <td>$2.00 </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="Wedding" class="tabcontent">
+            <div class="services-list">
+                <table class="pricelist__table">
+                    <tbody>
+                        <tr>
+                            <td>Haircuts</td>
+                            <td>$21.00 </td>
+                        </tr>
+                        <tr>
+                            <td>Skin Fade</td>
+                            <td>$23.00 </td>
+                        </tr>
+                        <tr>
+                            <td>Children's Cut</td>
+                            <td>$16.00 </td>
+                        </tr>
+                        <tr>
+                            <td>Shape Up</td>
+                            <td>$13.00 </td>
+                        </tr>
+                        <tr>
+                            <td>Senior Citizen</td>
+                            <td>$16.00 </td>
+                        </tr>
+                        <tr>
+                            <td>Hot Towel Shave</td>
+                            <td>$25.00 </td>
+                        </tr>
+                        <tr>
+                            <td>Beard Trim</td>
+                            <td>$16.00 </td>
+                        </tr>
+
+                        <tr>
+                            <td>Hair Wash</td>
+                            <td>$5.00 </td>
+                        </tr>
+                        <tr>
+                            <td>Hair Color</td>
+                            <td>$25.00 </td>
+                        </tr>
+                        <tr>
+                            <td>Beard Color</td>
+                            <td>$15.00 </td>
+                        </tr>
+                        <tr>
+                            <td>Full Washed & Disinfect Cape</td>
+                            <td>$2.00 </td>
+                        </tr>
 
 
 
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
+        <div class="give-call">
+            <h2 class="call-title">Give us a call</h2>
+            <div class="call-animation">
+                    <a href="tel:+1-917-779-5939" class="call-num">(917) 779-5939</a>
+            </div>
+            
+        </div>
+
+    </main>
+
+    <footer id="footer">
+        <div class="contact container">
+            <div class="address">
+                <h2 class="address-title">ADDRESS</h2>
+                <p class="address-subtitle">1809 Avenue M <br> Brooklyn, NY <br>
+                    11230</p>
+            </div>
+            <div class="hours">
+                <h2 class="address-title">HOURS</h2>
+                <p class="address-subtitle">10am - 10pm</p>
+                <p class="address-subtitle">7 days a week</p>
+            </div>
+            <div class="phone">
+                <h2 class="address-title">PHONE</h2>
+                <p class="address-subtitle">(917) 770-5939</p>
+                <div class="icons">
+                    <a href="https://www.facebook.com/tashkent.barbershop"><i class="icon fab fa-facebook"></i></a>
+                    <a
+                        href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0zEgpSSo2SjcwYLRSNaiwsEw2MjE1NTMzSLM0MzJPsTKoSDUwT0w0NTRNSzMySTJNTvYSLkkszshOzStRSEosSkotKs7ILwAAHqoW2A&q=tashkent+barbershop&oq=&aqs=chrome.0.46j35i39l5j46j69i59.17611519j0j15&sourceid=chrome&ie=UTF-8"><i
+                            class="icon fab fa-google"></i></a>
+                    <a href="https://www.yelp.com/biz/tashkent-barbershop-brooklyn"><i class="icon fab fa-yelp"></i></a>
+                    <a href="https://www.instagram.com/tashkent_barbershop/?hl=en"><i
+                            class="icon fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="copy-text">All Rights Reserved &copy; 2020</p>
+        </div>
+    </footer>
     <script src="../js/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <script src="../js/main.js"></script>
 </body>
+
 </html>

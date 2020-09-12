@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Contact Us</title>
-        <link rel="stylesheet" href="../css/aos.css">
-        <link rel="stylesheet" href="../css/all.min.css">
-        <link rel="stylesheet" href="../css/hamburgers.css">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Merriweather:wght@300;400&family=Oswald:wght@300;400;500;600&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="../css/style.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/aos.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/hamburgers.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Merriweather:wght@300;400&family=Oswald:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
 <body>
     <header class="header contact-us-header">
         <div class="container">
@@ -36,12 +41,105 @@
                 </nav>
             </div>
             <div class="header-title" data-aos-delay="300" data-aos-duration="1200" data-aos="fade-up"
-                data-aos-anchor-placement="bottom-bottom">   
-                <h2 class="header-main-title about-us-title">Contact us</h2>          
+                data-aos-anchor-placement="bottom-bottom">
+                <h2 class="header-main-title about-us-title">Contact us</h2>
             </div>
         </div>
     </header>
 
+    <main class="main">
+        <div class="contact-us-form">
+            <div class="contacts-form">
+                <div class="phone-address">
+                    <p class="phone-title introduction">Phone:</p>
+                    <div class="call-animation">
+                            <a href="tel:+1-917-779-5939" class="phone-number tel-hover">(917) 779-5939</a>
+                    </div>
+                </div>
+
+                <div class="phone-address">
+                    <p class="phone-title introduction">Address:</p>
+                    <p class="phone-number">1809 Avenue M, Brooklyn, <br>
+                        NY 11230</p>
+                </div>
+                <div class="input-contact">
+                    <p class="contact-title introduction">Contact:</p>
+                    <input class="input-1" type="text" tabindex="1" placeholder="Name:" aria-invalid="false">
+
+
+                    <input class="input-1" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                        placeholder="phone:" tabindex="2">
+
+
+                    <input class="input-1" type="email" tabindex="3" placeholder="email:" aria-invalid="false">
+
+                    <textarea class="input-1" rows="4" cols="50" name="comment" form="usrform"
+                        placeholder="Message:"></textarea>
+
+                    <input type="submit" value="Send message" class="submit-button">
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-us-map">
+            <div class="map-responsive">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.515268275579!2d-73.9590481850987!3d40.61851725126709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c244b8d9e70e3f%3A0xf8c342b398306515!2zMTgwOSBBdmVudWUgTSwgQnJvb2tseW4sIE5ZIDExMjMwLCDQodCo0JA!5e0!3m2!1sru!2s!4v1598510332301!5m2!1sru!2s"
+                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+        </div>
+
+        
+    </main>
+
+    <div class="graphic">
+        <div class="container">
+                <h2 class="graphic-title">We are working until late time</h2>
+                <i class="window far fa-window-minimize"></i>
+                <div class="time-day">
+                        <p class="time">10AM - 10PM <br>7 DAYS A WEEK</p>
+                </div>
+        </div>
+            
+    </div>
+
+
+
+
+
+
+    <footer id="footer">
+        <div class="contact container">
+            <div class="address">
+                <h2 class="address-title">ADDRESS</h2>
+                <p class="address-subtitle">1809 Avenue M <br> Brooklyn, NY <br>
+                    11230</p>
+            </div>
+            <div class="hours">
+                <h2 class="address-title">HOURS</h2>
+                <p class="address-subtitle">10am - 10pm</p>
+                <p class="address-subtitle">7 days a week</p>
+            </div>
+            <div class="phone">
+                <h2 class="address-title">PHONE</h2>
+                <p class="address-subtitle">(917) 770-5939</p>
+                <div class="icons">
+                    <a href="https://www.facebook.com/tashkent.barbershop"><i class="icon fab fa-facebook"></i></a>
+                    <a
+                        href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0zEgpSSo2SjcwYLRSNaiwsEw2MjE1NTMzSLM0MzJPsTKoSDUwT0w0NTRNSzMySTJNTvYSLkkszshOzStRSEosSkotKs7ILwAAHqoW2A&q=tashkent+barbershop&oq=&aqs=chrome.0.46j35i39l5j46j69i59.17611519j0j15&sourceid=chrome&ie=UTF-8"><i
+                            class="icon fab fa-google"></i></a>
+                    <a href="https://www.yelp.com/biz/tashkent-barbershop-brooklyn"><i class="icon fab fa-yelp"></i></a>
+                    <a href="https://www.instagram.com/tashkent_barbershop/?hl=en"><i
+                            class="icon fab fa-instagram"></i></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="copy-text">All Rights Reserved &copy; 2020</p>
+        </div>
+    </footer>
 
 
 
@@ -49,42 +147,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="../js/main.js"></script>
 </body>
+
 </html>
-
-<div class="about-us-video">
-        <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper ab-us-vid">
-                <!-- Slides -->
-                <div class="swiper-slide">   
-                    <video id="slider" autoplay muted loop>
-                        <source src="../video/video-int.mp4" type="video/mp4">
-                    </video>
-                </div>
-
-                <div class="swiper-slide">
-                    <video id="slider" autoplay muted loop>
-                        <source src="../video/video-int2.mp4" type="video/mp4">
-                    </video> 
-                </div>
-
-                <div class="swiper-slide">
-                    <video id="slider" autoplay muted loop>
-                        <source src="../video/video-int3.mp4" type="video/mp4">
-                    </video> 
-                </div>
-
-                <div class="swiper-slide">
-                    <video id="slider" autoplay muted loop>
-                        <source src="../video/home-intro.mp4" type="video/mp4">
-                    </video> 
-                </div>
-
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- If we need navigation buttons -->
-<div class="swiper-button-prev"></div>
-<div class="swiper-button-next"></div>
-        </div>
-    </div>
