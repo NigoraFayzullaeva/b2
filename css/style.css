@@ -861,6 +861,8 @@ table.pricelist__table tr:last-child td {
         letter-spacing: 2px;
         line-height: 21px;
         margin-bottom: 26px;
+        padding-left: 12px;
+    padding-right: 12px;
     }
 
     .contact {
@@ -962,22 +964,26 @@ table.pricelist__table tr:last-child td {
     padding-bottom: 16px;
     }
     table.pricelist__table tr td {
-        font-size: 13px;
+        font-size: 15px;
         padding: 12px;
     }
     .promotions, .deals {
         font-size: 16px;
     }
     .call-title{
-        font-size: 55px;
+        font-size: 48px;
     }
     .call-num{
         font-size: 45px;
     }
     .tab button{
         min-width: 100%;
+        font-size: 22px;
     }
     .gallery-swiper {
         width: 370px;
+        }
+        .description-main {
+            margin-bottom: 25px;
         }
 }
