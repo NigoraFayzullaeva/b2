@@ -211,14 +211,16 @@ body {
 .description-main {
     text-align: center;
     margin-bottom: 70px;
+    background-color: #000;
 }
 
 .des-subtitle {
-    color: #000000;
+    color: #fff;
     font-family: "Oswald", Sans-serif;
     font-size: 52px;
     margin-bottom: 20px;
     margin-top: 22px;
+    padding-top: 30px;
 }
 
 .description {
@@ -245,6 +247,78 @@ body {
 .learn-more:hover {
     text-decoration: underline;
 }
+.gallery-swiper{
+    margin: auto;
+    margin-bottom: 30px;
+    width: 420px;
+    height: 410px;
+    background: url(../img/gal/img-1.jpg);
+    animation: slide 50s infinite;
+}
+@keyframes slide{
+    5%{
+        background: url(../img/gal/img-1.jpg);
+    }
+    10%{
+        background: url(../img/gal/img-2.jpg);
+    }
+    15%{
+        background: url(../img/gal/img-3.jpg);
+    }
+    20%{
+        background: url(../img/gal/img-4.jpg);
+    }
+    25%{
+        background: url(../img/gal/img-5.jpg);
+    }
+    30%{
+        background: url(../img/gal/img-6.jpg);
+    }
+    35%{
+        background: url(../img/gal/img-7.jpg);
+    }
+    40%{
+        background: url(../img/gal/img-8.jpg);
+    }
+    45%{
+        background: url(../img/gal/img-9.jpg);
+    }
+    50%{
+        background: url(../img/gal/img-10.jpg);
+    }
+    55%{
+        background: url(../img/gal/img-11.jpg);
+    }
+    60%{
+        background: url(../img/gal/img-12.jpg);
+    }
+    65%{
+        background: url(../img/gal/img-13.jpg);
+    }
+    70%{
+        background: url(../img/gal/img-14.jpg);
+    }
+    75%{
+        background: url(../img/gal/img-15.jpg);
+    }
+    80%{
+        background: url(../img/gal/img-16.jpg);
+    }
+    85%{
+        background: url(../img/gal/img-17.jpg);
+    }
+    90%{
+        background: url(../img/gal/img-18.jpg);
+    }
+    95%{
+        background: url(../img/gal/img-19.jpg);
+    }
+    100%{
+        background: url(../img/gal/img-20.jpg);
+    }
+}
+
+
 
 /* footer */
 #footer {
@@ -439,7 +513,7 @@ table.pricelist__table {
 }
 
 table.pricelist__table tr td {
-    font-size: 18px;
+    font-size: 22px;
     border-bottom: 1px solid #999;
     padding: 15px;
 }
@@ -451,6 +525,16 @@ table.pricelist__table tr td:nth-child(2) {
 
 table.pricelist__table tr:last-child td {
     border-bottom: none;
+}
+.all-money{
+    font-size: 26px;
+    font-weight: 900;
+}
+.wedding-title-price{
+    font-style: italic;
+    font-size: 22px;
+    margin-top: 30px;
+    padding-bottom: 34px;
 }
 .services-bonuses{
     background-color: #e7dec8;
@@ -489,7 +573,10 @@ table.pricelist__table tr:last-child td {
 .call-num{
     color: #000;
     font-size: 60px;
-    
+}
+.tablinks{
+    animation: pulse 0.8s ease-in-out 0.5s infinite;
+    width: 49.7%;
 }
 /* CONTACT-US */
 .contact-us-header {
@@ -575,11 +662,6 @@ table.pricelist__table tr:last-child td {
     cursor: pointer;
 }
 
-/* iframe {
-    min-width: 990px;
-    height: 420px;
-} */
-
 .map-responsive {
     overflow: hidden;
     padding-bottom: 56.25%;
@@ -610,7 +692,10 @@ table.pricelist__table tr:last-child td {
     padding-top: 25px;
     padding-bottom: 30px;
 }
-
+.home-grapic-title{
+    padding-top: 40px;
+    padding-bottom: 0;
+}
 .window {
     font-size: 30px;
     color: #fff;
@@ -624,9 +709,9 @@ table.pricelist__table tr:last-child td {
 .time {
     color: #ffffff;
     font-family: "Merriweather", Sans-serif;
-    font-size: 20px;
+    font-size: 42px;
     text-transform: uppercase;
-    line-height: 2.1em;
+    line-height: 58px;
     letter-spacing: 1.9px;
 }
 
@@ -675,6 +760,9 @@ table.pricelist__table tr:last-child td {
     .promotions,
     .deals{
         font-size: 28px;
+    }
+    .tab button{
+        min-width: 100%;
     }
 }
 
@@ -886,4 +974,10 @@ table.pricelist__table tr:last-child td {
     .call-num{
         font-size: 45px;
     }
+    .tab button{
+        min-width: 100%;
+    }
+    .gallery-swiper {
+        width: 370px;
+        }
 }
