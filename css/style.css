@@ -210,7 +210,8 @@ body {
 
 .description-main {
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 35px;
+    padding-bottom: 25px;
     background-color: #000;
 }
 
@@ -236,7 +237,7 @@ body {
 }
 
 .learn-more {
-    color: #000000;
+    color: #fff;
     font-family: "Merriweather", Sans-serif;
     font-size: 16px;
     letter-spacing: 3px;
@@ -372,10 +373,17 @@ body {
 
 .copy-text {
     color: #fff;
-    text-align: center;
-    font-style: italic;
+    text-align: center; 
 }
-
+.novateg-style{
+    font-family: "Merriweather", Sans-serif;
+}
+.nov-style{
+    color: rgb(245, 229, 9);
+}
+.novateg-style{
+    color: #fff;
+}
 /* ABOUT-US */
 .about-us-header {
     background-image: url(../img/about-us.jpg);
@@ -532,7 +540,7 @@ table.pricelist__table tr:last-child td {
 }
 .wedding-title-price{
     font-style: italic;
-    font-size: 22px;
+    font-size: 15px;
     margin-top: 30px;
     padding-bottom: 34px;
 }
@@ -546,6 +554,40 @@ table.pricelist__table tr:last-child td {
     font-size: 30px;
     font-weight: 400;
     font-family: "Merriweather", Sans-serif;
+}
+.bonuses{
+    font-weight: 900;
+    text-align: center;
+    font-size: 43px;
+    color: rgba(255, 255, 255, 0.2);
+    background: url(../img/fir-burn.jpg) repeat-x;
+    -webkit-background-clip: text;
+    background-size: contain;
+    animation: fire 15s linear infinite;
+}
+@keyframes fire{
+    0%{
+        background-position: left 0 top 25px;
+    }
+    50%{
+        background-position: left 130px top -35px;
+    }
+    100%{
+        background-position: left 250px top 0;
+    }
+}
+.promotion{
+    font-size: 25px;
+   padding-left: 0;
+    max-width: 310px;
+    text-align: center;
+}
+.bonuses-paragraph{
+    font-size: 18px;
+    margin-top: 15px;
+}
+.bonuses-card-img{
+    animation: tada 2s ease-in-out 0.5s infinite;
 }
 .deals{
     margin-top: 20px;
@@ -969,6 +1011,21 @@ table.pricelist__table tr:last-child td {
     }
     .promotions, .deals {
         font-size: 16px;
+        flex-direction: column;
+    }
+    .bonuses{
+        font-size: 40px;
+    }
+    .promotion{
+        margin-bottom: 28px;
+        font-size: 21px;
+    margin-top: 9px;
+    }
+    .bonuses-card-img {
+        margin: auto;
+    }
+    .bonuses-paragraph {
+        margin-top: 32px;
     }
     .call-title{
         font-size: 48px;
