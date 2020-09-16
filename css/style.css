@@ -567,10 +567,10 @@ table.pricelist__table tr:last-child td {
 }
 @keyframes fire{
     0%{
-        background-position: left 0 top 25px;
+        background-position: left 0 top 0px;
     }
     50%{
-        background-position: left 130px top -35px;
+        background-position: left 130px top 0px;
     }
     100%{
         background-position: left 250px top 0;
@@ -578,7 +578,7 @@ table.pricelist__table tr:last-child td {
 }
 .promotion{
     font-size: 25px;
-   padding-left: 0;
+    padding-left: 0;
     max-width: 310px;
     text-align: center;
 }
