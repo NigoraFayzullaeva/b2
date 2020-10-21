@@ -44,19 +44,24 @@
             </div>
         </div>
     </header>
-    <main class="services-tabs container">
+    <div class="services-tabs container">
         <div class="services-bonuses">
             <div class="promotions">
-                <h2 class="bonuses">Bonuses</h2>
-                <h2 class="promotion">Promotions</h2>
+                <h2 class="bonuses">Lifetime Promotion</h2>
+                <p class="promotion">Get every 10<sup>th</sup> FREE service Punch Card</p>
+                <img class="bonuses-card-img" src="../img/bonus/np1.jpg" width="250" height="120">
             </div>
             <div class="deals">
-                <h2 class="bonuses">Weekly Promotions</h2>
-                <h2 class="promotion">Deals</h2>
+                <h2 class="bonuses">Seasonal Promotions</h2>
+                <p class="promotion">Get every 5<sup>th</sup> 50% OFF and 10<sup>th</sup> FREE service Punch Card</p>
+                <img class="bonuses-card-img" src="../img/bonus/np2.jpg" width="250" height="120">
+            </div>
+            <div>
+                <p class="bonuses-paragraph">*All Seasonal Promotions Available only from October 1<sup>st</sup> to November 30<sup>th</sup></p>
             </div>
         </div>
         <div class="tab">
-            <button class="tablinks" onclick="openService(event, 'Haircut')">HAIRCUT SERVICES</button>
+            <button class="tablinks" onclick="openService(event, 'Haircut')" id="defaultOpen">HAIRCUT SERVICES</button>
             <button class="tablinks" onclick="openService(event, 'Wedding')">WEDDING SERVICES</button>
         </div>
 
@@ -142,21 +147,22 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td>$150.00 </td>
+                            <td class="all-money">TOTAL</td>
+                            <td class="all-money">$150.00 </td>
                         </tr>
                     </tbody>
                 </table>
+                <p class="wedding-title-price">*All services included TOTAL price. Only for Wedding Services!</p>
             </div>
         </div>
 
         <div class="give-call">
-            <h2 class="call-title">Give us a call</h2>
-            <div class="call-animation">
-                <a href="tel:+1-917-770-5939" class="call-num">(917) 770-5939</a>
+                <h2 class="call-title">Give us a call</h2>
+                <div class="call-animation">
+                    <a href="tel:+1-917-770-5939" class="call-num">(917) 770-5939</a>
+                </div>
             </div>
-        </div>
-    </main>
+    </div> 
     <footer id="footer">
         <div class="contact container">
             <div class="address">
@@ -183,7 +189,8 @@
             </div>
         </div>
         <div class="copyright">
-            <p class="copy-text">All Rights Reserved &copy; 2020</p>
+            <p class="copy-text"> <i>All Rights Reserved &copy; 2020.</i> <a class="novateg-style" href="https://novateg.com/"> &nbsp; <strong><span class="nov-style">NOVATEG</span> &nbsp; Group</strong></a></p>
+            
         </div>
     </footer>
     <script src="../js/aos.js"></script>
